@@ -34,7 +34,7 @@ const Navigation: React.FC<NavigationProps> = ({ positions }) => {
         <h2
           className={`${ollifiaPoettry.className} text-2xl lg:text-4xl text-center lg:text-left`}
         >
-          Omnihale
+          Workaboutfoodie
         </h2>
         <nav className="flex justify-between w-[283px] lg:w-[526px] mt-7 lg:mt-0">
           {navLinks.map((navLink, index) => (
