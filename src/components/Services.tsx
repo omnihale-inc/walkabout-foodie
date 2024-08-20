@@ -50,7 +50,7 @@ const Services: React.FC<ServicesProps> = ({ onSetPositions }) => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`mr-6 p-7 backdrop-blur-2xl bg-white/5 rounded-2xl w-72 `}
+              className={`mr-6 p-7 backdrop-blur-lg lg:backdrop-blur-2xl bg-white/5 rounded-2xl w-72 `}
             >
               <div className='relative h-[150px] w-[230px] mb-5 '>
                 <Image
