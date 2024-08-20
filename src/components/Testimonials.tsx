@@ -26,15 +26,15 @@ const services = [
 
 const Testimonials: React.FC<TestimonialsProps> = ({ onSetPositions }) => {
   useEffect(() => {
-    const servicesPosition = window.document.getElementById('services');
-    if (servicesPosition)
+    const testimonialsPosition = window.document.getElementById('testimonials');
+    if (testimonialsPosition)
       onSetPositions((prevState) => ({
         ...prevState,
-        services: servicesPosition?.offsetTop,
+        testimonials: testimonialsPosition?.offsetTop,
       }));
   }, [onSetPositions]);
   return (
-    <section>
+    <section id='testimonials'>
       <h2
         className={`${handbuck.className} mt-28 text-center text-black text-6xl`}
       >
