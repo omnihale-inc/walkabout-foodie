@@ -1,22 +1,22 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next';
+import './globals.css';
 
-import { satoshi } from "@/utils/font";
+import { satoshi } from '@/utils/font';
 
 export const metadata: Metadata = {
-  title: "Workaboutfoodie",
-  description: "service brand website from omnihale",
+  title: 'Walkaboutfoodie',
+  description: 'service brand website from omnihale',
   keywords: [
-    "Business innovation",
-    "Innovative business solutions",
-    "Business transformation",
-    "Cutting-edge business strategies",
-    "Revolutionizing business",
-    "Future of business",
-    "Business development",
-    "Modern business practices",
+    'Business innovation',
+    'Innovative business solutions',
+    'Business transformation',
+    'Cutting-edge business strategies',
+    'Revolutionizing business',
+    'Future of business',
+    'Business development',
+    'Modern business practices',
   ],
-  icons: "/logo.png",
+  icons: '/logo.png',
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={satoshi.className}>{children}</body>
     </html>
   );

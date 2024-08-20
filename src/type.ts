@@ -3,8 +3,8 @@ interface OnSetPositions {
     React.SetStateAction<{
       home: number;
       about: number;
-      brand: number;
-      startup: number;
+      services: number;
+      testimonials: number;
       contact: number;
     }>
   >;
@@ -20,4 +20,16 @@ interface HomeProps extends OnSetPositions {}
 
 interface StartupProps extends OnSetPositions {}
 
-export type { AboutProps, BrandProps, ContactProps, HomeProps, StartupProps };
+interface ServicesProps extends OnSetPositions {}
+
+interface TestimonialsProps extends OnSetPositions {}
+
+export type {
+  AboutProps,
+  BrandProps,
+  ContactProps,
+  HomeProps,
+  StartupProps,
+  ServicesProps,
+  TestimonialsProps,
+};
